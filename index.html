@@ -8,6 +8,7 @@
 </head>
 <body>
   <header class="header">
+    <button class="menu-toggle" id="menu-toggle">☰</button>
     <div class="logo">Inversiones Tek 💰</div>
     <div class="search-bar">
         <input type="text" placeholder="Buscar inversor..." />
@@ -148,5 +149,13 @@
   <footer class="footer">
   <p>© 2025 Tek Inversiones. Todos los derechos reservados 💼</p>
 </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+
+  menuToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
